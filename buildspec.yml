@@ -16,7 +16,8 @@ phases:
   post_build:
     commands:
       - echo post_build
-
+      - mv target/deploy ./
 artifacts:
   files:
-    - target/spring-boot-todo-rest-api-h2-aws-codepipeline-0.0.1-SNAPSHOT.jar
+    - deploy/**/*
+	
